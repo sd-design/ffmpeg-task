@@ -35,4 +35,14 @@ class UploadController extends Controller
             ->with('file', $fileName);
 
     }
+    public function db(){
+
+        try {
+            \DB::connection()->getPDO();
+            echo \DB::connection()->getDatabaseName();
+        } catch (\Exception $e) {
+            echo 'None';
+        }
+
+    }
 }
