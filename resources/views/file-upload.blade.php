@@ -6,11 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Тестовое задание от MassPers</title>
+    <link rel="stylesheet" href="{{url('css/main.css')}}" type="text/css">
+    <title>Test task from MassPers</title>
 </head>
 <body>
 <div class="container">
-    <h1 class="display-2 text-center mt-3">Тестовое задание от MassPers</h1>
+    <h1 class="display-2 text-center text-light mt-3">Test task from MassPers</h1>
     <div id="formUpload">
         <form action="/upload" method="POST" enctype="multipart/form-data">
             @csrf
@@ -69,7 +70,7 @@
             </div>
 
             <div class="col-sm-12">
-                <button type="submit" class="btn btn-primary">Отправить</button>
+                <button type="submit" class="btn btn-info">Отправить</button>
             </div>
         </div>
         </form>

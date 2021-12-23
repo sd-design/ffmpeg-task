@@ -15,7 +15,11 @@ use App\Http\Controllers\UploadController;
 |
 */
 
+Route::get('/welcome', function(){
+    return view('welcome');
+});
 Route::get('/', [UploadController::class, 'createForm']);
+
 
 Route::post('/upload', [UploadController::class, 'upload_files'])->name('upload');
 Route::get('/db', [UploadController::class, 'db']);
