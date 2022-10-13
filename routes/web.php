@@ -23,3 +23,6 @@ Route::get('/', [UploadController::class, 'createForm']);
 
 Route::post('/upload', [UploadController::class, 'upload_files'])->name('upload');
 Route::get('/db', [UploadController::class, 'db']);
+Route::get('/php', function(){
+    return view('php');
+});
